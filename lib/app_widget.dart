@@ -1,4 +1,4 @@
-import 'package:appquiz/splash/splash_page.dart';
+import 'package:appquiz/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -7,7 +7,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "AppQuiz",
-      home: SplashPage(),
+      home: HomePage(),
     );
   }
 }
