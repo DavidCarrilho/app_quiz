@@ -1,3 +1,4 @@
+import 'package:appquiz/core/widgets/quiz_card.dart';
 import 'package:flutter/material.dart';
 import '../core/widgets/custom_appbar.dart';
 import '../core/widgets/level_button.dart';
@@ -14,13 +15,18 @@ class _HomePageState extends State<HomePage> {
       appBar: CustomAppBar(),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
           children: [
-            LevelButtom(label: 'Fácil'),
-            LevelButtom(label: 'Médio'),
-            LevelButtom(label: 'Difícil'),
-            LevelButtom(label: 'Perito'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                LevelButtom(label: 'Fácil'),
+                LevelButtom(label: 'Médio'),
+                LevelButtom(label: 'Difícil'),
+                LevelButtom(label: 'Perito'),
+              ],
+            ),
+            QuizCard(),
           ],
         ),
       ),

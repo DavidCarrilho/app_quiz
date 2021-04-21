@@ -24,7 +24,9 @@ class CustomAppBar extends PreferredSize {
                           style: AppTextStyles.title,
                           children: [
                             TextSpan(
-                                text: 'DuckDev', style: AppTextStyles.titleBold)
+                              text: 'DuckDev',
+                              style: AppTextStyles.titleBold,
+                            )
                           ],
                         ),
                       ),
