@@ -14,9 +14,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: CustomAppBar(),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
+            SizedBox(height: 24.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -26,7 +27,19 @@ class _HomePageState extends State<HomePage> {
                 LevelButtom(label: 'Perito'),
               ],
             ),
-            QuizCard(),
+            SizedBox(height: 24.0),
+            Expanded(
+              child: GridView.count(
+                crossAxisCount: 2,
+                crossAxisSpacing: 16.0,
+                mainAxisSpacing: 16.0,
+                children: [
+                  QuizCard(),
+                  QuizCard(),
+                  QuizCard(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
