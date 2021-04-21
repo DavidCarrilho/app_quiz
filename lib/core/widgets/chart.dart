@@ -1,5 +1,5 @@
-import 'package:appquiz/core/app_text_styles.dart';
-import 'package:appquiz/core/app_colors.dart';
+import '../app_text_styles.dart';
+import '../app_colors.dart';
 import 'package:flutter/material.dart';
 
 class Chart extends StatelessWidget {

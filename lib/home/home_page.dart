@@ -1,5 +1,6 @@
-import 'package:appquiz/core/components/custom_appbar.dart';
 import 'package:flutter/material.dart';
+import '../core/widgets/custom_appbar.dart';
+import '../core/widgets/level_button.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,6 +12,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            LevelButtom(label: 'Fácil'),
+            LevelButtom(label: 'Médio'),
+            LevelButtom(label: 'Difícil'),
+            LevelButtom(label: 'Perito'),
+          ],
+        ),
+      ),
     );
   }
 }

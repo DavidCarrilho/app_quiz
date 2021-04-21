@@ -1,5 +1,6 @@
-import 'package:appquiz/home/home_page.dart';
 import 'package:flutter/material.dart';
+
+import 'home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override

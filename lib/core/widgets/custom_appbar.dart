@@ -1,7 +1,6 @@
-import 'package:appquiz/core/app_text_styles.dart';
-import 'package:appquiz/core/components/score_card.dart';
 import 'package:appquiz/core/core.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:appquiz/core/widgets/score_card.dart';
+import 'package:flutter/material.dart';
 
 class CustomAppBar extends PreferredSize {
   CustomAppBar()
@@ -25,7 +24,7 @@ class CustomAppBar extends PreferredSize {
                           style: AppTextStyles.title,
                           children: [
                             TextSpan(
-                                text: 'DavDev', style: AppTextStyles.titleBold)
+                                text: 'DuckDev', style: AppTextStyles.titleBold)
                           ],
                         ),
                       ),
@@ -36,7 +35,7 @@ class CustomAppBar extends PreferredSize {
                             borderRadius: BorderRadius.circular(10.0),
                             image: DecorationImage(
                                 image: NetworkImage(
-                                    'https://avatars.githubusercontent.com/u/20521609?s=400&u=81143357e1bab85f004fd40927ac3a59f010d6f8&v=4'))),
+                                    'https://cdn.freebiesupply.com/logos/large/2x/duckduckgo-3-logo-png-transparent.png'))),
                       ),
                     ],
                   ),
