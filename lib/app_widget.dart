@@ -1,6 +1,6 @@
+import 'package:appquiz/challenge/challenge_page.dart';
+import 'package:appquiz/home/home_page.dart';
 import 'package:flutter/material.dart';
-
-import 'home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -8,6 +8,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "AppQuiz",
+      // home: ChallengePage(),
       home: HomePage(),
     );
   }
