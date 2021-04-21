@@ -8,8 +8,8 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "AppQuiz",
-      // home: ChallengePage(),
-      home: HomePage(),
+      home: ChallengePage(),
+      // home: HomePage(),
     );
   }
 }
